@@ -6,10 +6,11 @@ let s1 = `Input your choice:
   2. zipcode to barcode
 3. exit`;
 
-console.log('----------- s1 ------------');
+console.log('----------- s1: no margin ------------');
 console.log(s1);
 
 // use | at all beginings
+// this is the recommend way
 let s2 = stripMargin(
   `|Input your choice:
    |1. barcode to zipcode
@@ -17,7 +18,7 @@ let s2 = stripMargin(
    |3. exit`
 );
 
-console.log('----------- s2 ------------');
+console.log('----------- s2: good way ------------');
 console.log(s2);
 
 // leading spaces and the first | are ignored,
@@ -31,7 +32,7 @@ let s3 = stripMargin(
  |`
 );
 
-console.log('----------- s3 ------------');
+console.log('----------- s3: crazy way, dont do it ------------');
 console.log(s3);
 
 console.log('----- Are the 3 strings same? -------');
