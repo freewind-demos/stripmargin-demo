@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "stripmargin": "^1.0.7"
+    "stripmargin": "1.0.7"
   }
 }
